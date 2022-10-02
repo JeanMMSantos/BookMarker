@@ -11,7 +11,7 @@ public class AutorAmador extends user {
     public AutorAmador ( String Pseudonimo, String Descricao, String LivroMPop ){
         this.Pseudonimo = Pseudonimo;
         this.Descricao = Descricao;
-        this.LivroMPop = LivroMpop
+        this.LivroMPop = LivroMPop;
         
     }
 
