@@ -1,4 +1,4 @@
-package com.company.bookmarker.users;
+package com.company.bookmarker.entities.users;
 
 import java.time.LocalDate;
 
