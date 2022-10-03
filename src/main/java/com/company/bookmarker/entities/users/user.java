@@ -2,14 +2,14 @@ package com.company.bookmarker.entities.users;
 
 import java.time.LocalDate;
 
-public class user {
+public class User {
     private String name, password, email, gender, photo;
     private LocalDate date;
     private Long cpf, phone;
     
-    public user() {
+    public User() {
     }
-    public user(String name, String password, String email, String gender, String photo, LocalDate date, Long cpf,
+    public User(String name, String password, String email, String gender, String photo, LocalDate date, Long cpf,
             Long phone) {
         this.name = name;
         this.password = password;

@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 
 
-public class AutorAmador extends user {
+public class AutorAmador extends User {
     private String Pseudonimo;
     private String Descricao;
     private String LivroMPop;
