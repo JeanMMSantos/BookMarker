@@ -1,18 +1,21 @@
 
 package com.company.bookmarker.entities.users;
 
+import java.time.LocalDate;
+
 
 
 public class AutorAmador extends user {
-    public String Pseudonimo;
-    public String Descricao;
-    public String LivroMPop;
+    private String Pseudonimo;
+    private String Descricao;
+    private String LivroMPop;
     
-    public AutorAmador ( String Pseudonimo, String Descricao, String LivroMPop ){
+
+    public AutorAmador(String name, String password, String email, String gender, String photo, LocalDate date, Long cpf, Long phone, String Pseudonimo, String Descricao, String LivroMPop) {
+        super(name, password, email, gender, photo, date, cpf, phone);
         this.Pseudonimo = Pseudonimo;
         this.Descricao = Descricao;
-        this.LivroMPop = LivroMpop
-        
+        this.LivroMPop = LivroMPop;
     }
 
     public String getPseudonimo() {
