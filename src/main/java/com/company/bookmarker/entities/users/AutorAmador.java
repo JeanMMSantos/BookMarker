@@ -16,6 +16,7 @@ public class AutorAmador extends user {
         this.Pseudonimo = Pseudonimo;
         this.Descricao = Descricao;
         this.LivroMPop = LivroMPop;
+
     }
 
     public String getPseudonimo() {
