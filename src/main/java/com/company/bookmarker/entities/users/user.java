@@ -7,8 +7,10 @@ public class User {
     private LocalDate date;
     private Long cpf, phone;
     
+    //Constructors
     public User() {
     }
+
     public User(String name, String password, String email, String gender, String photo, LocalDate date, Long cpf,
             Long phone) {
         this.name = name;
@@ -20,6 +22,8 @@ public class User {
         this.cpf = cpf;
         this.phone = phone;
     }
+
+    //Getters abd Setters
     public String getName() {
         return name;
     }
