@@ -1,4 +1,4 @@
-package com.company.bookmarker.entities.users;
+package com.company.bookmarker.entities.libraries;
 
 public class Book {
     private String name;

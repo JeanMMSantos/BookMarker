@@ -1,4 +1,4 @@
-package com.company.bookmarker.entities.users;
+package com.company.bookmarker.entities.libraries;
 
 import java.util.ArrayList;
 public class PremiumLibrary extends Library{
