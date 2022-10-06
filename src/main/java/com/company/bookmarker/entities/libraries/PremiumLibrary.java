@@ -6,6 +6,4 @@ public class PremiumLibrary extends Library{
     private String theme;
     private int id;
     private String favorite;
-    private PremiumLibraryCollection premiumLibraryCollection;
-    //private ArrayList<BookStatus> defaultPremiumLibrary = new ArrayList<BookStatus>();
 }
