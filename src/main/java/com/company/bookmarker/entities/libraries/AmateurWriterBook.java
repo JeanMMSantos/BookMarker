@@ -1,11 +1,11 @@
-package com.company.bookmarker.entities.users;
+package com.company.bookmarker.entities.libraries;
 
-public class AmateurWriter {
+public class AmateurWriterBook {
 
     private int id;
     private double bookValue;
 
-    public AmateurWriter(int id, double bookValue) {
+    public AmateurWriterBook(int id, double bookValue) {
         this.id = id;
         this.bookValue = bookValue;
     }
