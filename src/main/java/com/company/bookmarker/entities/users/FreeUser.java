@@ -7,7 +7,7 @@ import com.company.bookmarker.entities.libraries.FreeLibrary;
 public class FreeUser extends User{
 
     private FreeLibrary freeLibrary;
-
+    
     //Constructors
     public FreeUser(String name, String password, String email, String gender, String photo, LocalDate date, Long cpf,
             Long phone, FreeLibrary freeLibrary) {
