@@ -1,6 +1,6 @@
 package com.company.bookmarker.entities.libraries;
 
-public class BookApi {
+public class BookApi extends Book {
 
     private String key;
     private String isbn;
