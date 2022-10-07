@@ -7,4 +7,9 @@ public class Book {
     private String publishingCompany;
     private int numberOfPages;
     private String description;
+
+    public Book() {
+    }
+
+
 }

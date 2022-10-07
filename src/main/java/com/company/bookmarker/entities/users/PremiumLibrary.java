@@ -7,4 +7,7 @@ public class PremiumLibrary extends Library{
     private int id;
     private String favorite;
     private ArrayList<BookStatus> defaultPremiumLibrary = new ArrayList<BookStatus>();
+
+    public PremiumLibrary() {
+    }
 }
