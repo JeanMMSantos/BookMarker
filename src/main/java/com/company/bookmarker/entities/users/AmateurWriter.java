@@ -10,7 +10,8 @@ import java.util.ArrayList;
 public class AmateurWriter extends User {
     private String pseudonym;
     private String Description;
-    private AmateurWriterBook mostPopBook; 
+    private AmateurWriterBook mostPopBook;
+    private AmateurWriterBook amateurWriterBook; 
     private ArrayList<AmateurWriterBook> writedBooks = new ArrayList<AmateurWriterBook>();
     
 
