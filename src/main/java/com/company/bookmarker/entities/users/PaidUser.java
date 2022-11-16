@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import com.company.bookmarker.entities.libraries.FreeLibrary;
 import com.company.bookmarker.entities.libraries.PremiumLibrary;
 
+import javax.persistence.Entity;
+
+@Entity
 public class PaidUser extends User{
 
     private int paymentTypeNumber;

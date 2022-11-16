@@ -1,5 +1,8 @@
 package com.company.bookmarker.entities.libraries;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Book {
     private String name;
     private String cover;
