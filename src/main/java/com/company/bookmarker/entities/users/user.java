@@ -1,5 +1,4 @@
 package com.company.bookmarker.entities.users;
-
 import java.time.LocalDate;
 import javax.persistence.Entity;
 
@@ -13,5 +12,3 @@ public abstract class User {
     public User() {
     }
 }
-
-
