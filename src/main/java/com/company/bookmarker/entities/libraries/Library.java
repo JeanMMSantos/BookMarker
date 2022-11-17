@@ -1,10 +1,12 @@
 package com.company.bookmarker.entities.libraries;
 
-import javax.persistence.Entity;
-import java.util.ArrayList;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
+@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="classe")
 public abstract class Library {
-
-    private ArrayList<BookStatus> defaultFreeLibrary = new ArrayList<BookStatus>();
+    @ManyToMany
+    private Set<BookStatus> defaultFreeLibrary;
 }
