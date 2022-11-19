@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 @Entity
 public class AmateurWriter extends User {
 
-    @OneToMany(mappedBy = "amateurWriterBook")
+    @OneToMany(mappedBy = "amateurWriter")
     Set<AmateurWriterBook> amateurWriterBooks;
 
     private String pseudonym;
