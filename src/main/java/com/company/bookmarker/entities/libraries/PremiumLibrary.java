@@ -1,11 +1,18 @@
 package com.company.bookmarker.entities.libraries;
 
 import javax.persistence.*;
+
+import com.company.bookmarker.entities.users.PaidUser;
+
 import java.util.ArrayList;
 
 @Entity
 @DiscriminatorValue(value="PremiumLibrary")
 public class PremiumLibrary extends Library{
+    
+    @ManyToOne
+    PaidUser paidUser;
+
     private String name;
     private String theme;
     @Id
