@@ -9,9 +9,6 @@ import java.util.ArrayList;
 @Entity
 @DiscriminatorValue(value="PremiumLibrary")
 public class PremiumLibrary extends Library{
-    
-    @ManyToOne
-    PaidUser paidUser;
 
     private String name;
     private String theme;

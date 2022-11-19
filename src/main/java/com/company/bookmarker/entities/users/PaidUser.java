@@ -8,12 +8,14 @@ import com.company.bookmarker.entities.libraries.FreeLibrary;
 import com.company.bookmarker.entities.libraries.PremiumLibrary;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 @Entity
 public class PaidUser extends User{
 
-    @OneToMany(mappedBy = "paidUser")
+    @OneToMany
+    @JoinColumn(name = "id")
     Set<PremiumLibrary> premiumLibraries;
 
     private int paymentTypeNumber;
