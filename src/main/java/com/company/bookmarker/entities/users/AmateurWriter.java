@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 public class AmateurWriter extends User {
 
     @OneToMany(mappedBy = "amateurWriter")
-    Set<AmateurWriterBook> amateurWriterBooks;
+    private Set<AmateurWriterBook> amateurWriterBooks;
 
     private String pseudonym;
     private String Description;
