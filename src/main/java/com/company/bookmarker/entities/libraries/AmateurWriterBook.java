@@ -2,6 +2,8 @@ package com.company.bookmarker.entities.libraries;
 
 import com.company.bookmarker.entities.users.AmateurWriter;
 
+import java.util.Set;
+
 import javax.persistence.*;
 
 
@@ -11,11 +13,13 @@ public class AmateurWriterBook extends Book {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+
+    @ManyToMany(mappedBy = "amateurWriterBooks")
+    private Set<AmateurWriter> amateurWriters;
+
     private int id;
     private double bookValue;
-    @ManyToOne
-    private AmateurWriter amateurWriter;
-
+    
     public AmateurWriterBook() {
     }
 }

@@ -6,14 +6,22 @@ import java.util.ArrayList;
 import java.util.Set;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+import org.hibernate.annotations.GeneratorType;
 
 
 
 @Entity
 public class AmateurWriter extends User {
 
-    @OneToMany(mappedBy = "amateurWriter")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+
+    @ManyToMany
     private Set<AmateurWriterBook> amateurWriterBooks;
 
     private String pseudonym;
