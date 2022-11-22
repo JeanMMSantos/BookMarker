@@ -19,11 +19,7 @@ import javax.persistence.OneToOne;
 import org.apache.tomcat.jni.Library;
 
 @Entity
-public class PaidUser extends User{
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+public class PaidUser extends User{    
 
     @OneToMany
     @JoinColumn(name = "paidUser_id")
