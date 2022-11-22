@@ -14,7 +14,7 @@ import javax.persistence.InheritanceType;
 public class Book {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private int id;
+    private long id;
 
     private String name;
     private String cover;
