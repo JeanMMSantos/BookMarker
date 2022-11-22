@@ -11,13 +11,10 @@ import javax.persistence.*;
 @DiscriminatorValue(value="AmateurWriterBook")
 public class AmateurWriterBook extends Book {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-
     @ManyToMany(mappedBy = "amateurWriterBooks")
     private Set<AmateurWriter> amateurWriters;
 
-    private int id;
+    
     private double bookValue;
     
     public AmateurWriterBook() {
