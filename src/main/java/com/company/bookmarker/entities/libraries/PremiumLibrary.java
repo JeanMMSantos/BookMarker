@@ -12,8 +12,5 @@ public class PremiumLibrary extends Library{
 
     private String name;
     private String theme;
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private int id;
     private Book favorite;
 }

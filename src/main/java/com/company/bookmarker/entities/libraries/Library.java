@@ -7,6 +7,11 @@ import java.util.Set;
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="classe")
 public abstract class Library {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private long id;
+
     @ManyToMany
     private Set<BookStatus> defaultFreeLibrary;
 }
