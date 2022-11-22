@@ -20,6 +20,7 @@ public class AmateurWriter extends User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long Id;
 
     @ManyToMany
     private Set<AmateurWriterBook> amateurWriterBooks;
