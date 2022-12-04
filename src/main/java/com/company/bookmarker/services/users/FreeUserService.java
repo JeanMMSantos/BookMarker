@@ -2,8 +2,10 @@ package com.company.bookmarker.services.users;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.company.bookmarker.entities.users.FreeUser;
 import com.company.bookmarker.repositories.users.FreeUserRepository;
+
 import java.util.List;
 
 @Service
