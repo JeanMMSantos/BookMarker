@@ -6,8 +6,11 @@ import com.company.bookmarker.entities.libraries.FreeLibrary;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "tbfreeUser")
+
 public class FreeUser extends User{
 
     @OneToOne
@@ -16,7 +19,7 @@ public class FreeUser extends User{
     //private FreeLibrary freeLibrary;    
     //Constructors
     public FreeUser() {
-    }
-
+    } 
+    
     
 }
