@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.company.bookmarker.entities.users.AmateurWriter;
 import com.company.bookmarker.repositories.users.AmauterWriterRepository;
-import com.company.bookmarker.repositories.users.PaidUserRepository;
 
 import java.util.List;
 
