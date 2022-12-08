@@ -17,15 +17,32 @@ public class AmauterWriterService {
         return amauterWriterRepository.findAll();
     }
 
-    public AmateurWriter findById(long id){
+    public AmateurWriter findById(Long id){
         return amauterWriterRepository.findById(id).get();
     }
 
     public AmateurWriter save(AmateurWriter amateurWriter){
-        return AmauterWriterRepository.save(amateurWriter);
+        return amauterWriterRepository.save(amateurWriter);
     }
 
     public void delete(Long id) {
-		AmauterWriterRepository.deleteById(id);
+		amauterWriterRepository.deleteById(id);
 	}
+
+    public AmateurWriter update(Long id, AmateurWriter amateurWriter){
+        @SuppressWarnings("depreciation")
+        AmateurWriter entity = amauterWriterRepository.getById(id);
+        updateData(entity, amateurWriter);
+        return amauterWriterRepository.save(entity);
+    }
+    
+    private void updateData(AmateurWriter entity, AmateurWriter amateurWriter){
+        entity.setCpf(amateurWriter.getCpf());
+        entity.setDate(amateurWriter.getDate());
+        entity.setEmail(amateurWriter.getEmail());
+        entity.setGender(amateurWriter.getGender());
+        entity.setName(amateurWriter.getName());
+        entity.setPassword(amateurWriter.getPassword());
+    }
 }
+

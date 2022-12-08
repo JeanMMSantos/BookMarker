@@ -1,5 +1,7 @@
 package com.company.bookmarker.resources.users;
 
+import java.net.URI;
+
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +40,7 @@ public class AmauterWriterResource {
         amauterWriter = amauterWriterService.save(amauterWriter);
         amauterWriterService.save(amauterWriter);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(amauterWriter.getId()).toUri();
+        return ResponseEntity.created(uri).body(amauterWriter);
     }
 
     @DeleteMapping(value = "/{id}")
