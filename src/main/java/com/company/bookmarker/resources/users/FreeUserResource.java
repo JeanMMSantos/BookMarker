@@ -34,6 +34,6 @@ public class FreeUserResource {
 
     @PostMapping
     public FreeUser create(@RequestBody FreeUser freeUser){
-        return FreeUserRepository.save();
+        return FreeUserRepository.save(freeUser);
     }
 }
