@@ -19,4 +19,29 @@ public class PaidUserService {
     public PaidUser findById(long id){
         return paidUserRepository.findById(id).get();
     }
+
+    public PaidUser save(PaidUser paidUser){
+        return paidUserRepository.save(paidUser);
+    }
+
+    public void delete(Long id) {
+		paidUserRepository.deleteById(id);
+	}
+    
+    public PaidUser update(Long id, PaidUser paidUser){
+        @SuppressWarnings("deprecation")
+        PaidUser entity = paidUserRepository.getById(id);
+        updateData(entity, paidUser);
+        return paidUserRepository.save(entity);
+    }
+
+    private void updateData(PaidUser entity, PaidUser paidUser){
+        entity.setCpf(paidUser.getCpf());
+        entity.setDate(paidUser.getDate());
+        entity.setEmail(paidUser.getEmail());
+        entity.setGender(paidUser.getGender());
+        entity.setFreeLibrary(paidUser.getFreeLibrary());
+        entity.setName(paidUser.getName());
+        entity.setPassword(paidUser.getPassword());
+    }
 }
