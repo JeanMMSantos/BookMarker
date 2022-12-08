@@ -37,11 +37,17 @@ public class AmauterWriterService {
     
     private void updateData(AmateurWriter entity, AmateurWriter amateurWriter){
         entity.setCpf(amateurWriter.getCpf());
+        entity.setPhone(amateurWriter.getPhone());
         entity.setDate(amateurWriter.getDate());
         entity.setEmail(amateurWriter.getEmail());
         entity.setGender(amateurWriter.getGender());
         entity.setName(amateurWriter.getName());
         entity.setPassword(amateurWriter.getPassword());
+        entity.setPhoto(amateurWriter.getPhoto());
+
+        entity.setPseudonym(amateurWriter.getPseudonym());
+        entity.setDescription(amateurWriter.getDescription());
+        entity.setMostPopBook(amateurWriter.getMostPopBook());
     }
 }
 
