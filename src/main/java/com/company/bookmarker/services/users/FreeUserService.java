@@ -21,5 +21,9 @@ public class FreeUserService {
         return freeUserRepository.findById(id).get();
     }
 
+    public FreeUser save(FreeUser freeUser){
+        return freeUserRepository.save(freeUser);
+    }
+
     
 }
