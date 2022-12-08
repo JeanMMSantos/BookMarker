@@ -40,5 +40,57 @@ public class PaidUser extends User{
     //Constructors
     public PaidUser() {
     }
+
+
+    public Set<PremiumLibrary> getPremiumLibraries() {
+        return premiumLibraries;
+    }
+
+
+    public void setPremiumLibraries(Set<PremiumLibrary> premiumLibraries) {
+        this.premiumLibraries = premiumLibraries;
+    }
+
+
+    public FreeLibrary getFreeLibrary() {
+        return freeLibrary;
+    }
+
+
+    public void setFreeLibrary(FreeLibrary freeLibrary) {
+        this.freeLibrary = freeLibrary;
+    }
+
+
+    public PaymentType getPaymentType() {
+        return paymentType;
+    }
+
+
+    public void setPaymentType(PaymentType paymentType) {
+        this.paymentType = paymentType;
+    }
+
+
+    public int getPaymentTypeNumber() {
+        return paymentTypeNumber;
+    }
+
+
+    public void setPaymentTypeNumber(int paymentTypeNumber) {
+        this.paymentTypeNumber = paymentTypeNumber;
+    }
+
+
+    public float getPaymentValue() {
+        return paymentValue;
+    }
+
+
+    public void setPaymentValue(float paymentValue) {
+        this.paymentValue = paymentValue;
+    }
+
+    
     
 }

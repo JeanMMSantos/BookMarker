@@ -19,6 +19,14 @@ public class FreeUser extends User{
     //private FreeLibrary freeLibrary;    
     //Constructors
     public FreeUser() {
+    }
+
+    public FreeLibrary getFreeLibrary() {
+        return freeLibrary;
+    }
+
+    public void setFreeLibrary(FreeLibrary freeLibrary) {
+        this.freeLibrary = freeLibrary;
     } 
     
     

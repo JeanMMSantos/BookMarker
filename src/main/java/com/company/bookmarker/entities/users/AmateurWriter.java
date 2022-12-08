@@ -29,5 +29,65 @@ public class AmateurWriter extends User {
 
     }
 
+
+    public Set<AmateurWriterBook> getAmateurWriterBooks() {
+        return amateurWriterBooks;
+    }
+
+
+    public void setAmateurWriterBooks(Set<AmateurWriterBook> amateurWriterBooks) {
+        this.amateurWriterBooks = amateurWriterBooks;
+    }
+
+
+    public String getPseudonym() {
+        return pseudonym;
+    }
+
+
+    public void setPseudonym(String pseudonym) {
+        this.pseudonym = pseudonym;
+    }
+
+
+    public String getDescription() {
+        return Description;
+    }
+
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+
+    public AmateurWriterBook getMostPopBook() {
+        return mostPopBook;
+    }
+
+
+    public void setMostPopBook(AmateurWriterBook mostPopBook) {
+        this.mostPopBook = mostPopBook;
+    }
+
+
+    public AmateurWriterBook getAmateurWriterBook() {
+        return amateurWriterBook;
+    }
+
+
+    public void setAmateurWriterBook(AmateurWriterBook amateurWriterBook) {
+        this.amateurWriterBook = amateurWriterBook;
+    }
+
+
+    public ArrayList<AmateurWriterBook> getWritedBooks() {
+        return writedBooks;
+    }
+
+
+    public void setWritedBooks(ArrayList<AmateurWriterBook> writedBooks) {
+        this.writedBooks = writedBooks;
+    }
+
     
 }
