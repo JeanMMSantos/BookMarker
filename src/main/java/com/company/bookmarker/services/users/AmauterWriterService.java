@@ -13,30 +13,31 @@ public class AmauterWriterService {
     @Autowired
     private AmauterWriterRepository amauterWriterRepository;
 
-    public List<AmateurWriter> findAll(){
+    public List<AmateurWriter> findAll() {
         return amauterWriterRepository.findAll();
     }
 
-    public AmateurWriter findById(Long id){
+    public AmateurWriter findById(Long id) {
         return amauterWriterRepository.findById(id).get();
     }
 
-    public AmateurWriter save(AmateurWriter amateurWriter){
+    public AmateurWriter save(AmateurWriter amateurWriter) {
         return amauterWriterRepository.save(amateurWriter);
     }
 
     public void delete(Long id) {
-		amauterWriterRepository.deleteById(id);
-	}
 
-    public AmateurWriter update(Long id, AmateurWriter amateurWriter){
+        amauterWriterRepository.deleteById(id);
+    }
+
+    public AmateurWriter update(Long id, AmateurWriter amateurWriter) {
         @SuppressWarnings("depreciation")
         AmateurWriter entity = amauterWriterRepository.getById(id);
         updateData(entity, amateurWriter);
         return amauterWriterRepository.save(entity);
     }
-    
-    private void updateData(AmateurWriter entity, AmateurWriter amateurWriter){
+
+    private void updateData(AmateurWriter entity, AmateurWriter amateurWriter) {
         entity.setCpf(amateurWriter.getCpf());
         entity.setDate(amateurWriter.getDate());
         entity.setEmail(amateurWriter.getEmail());
