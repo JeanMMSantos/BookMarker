@@ -46,5 +46,8 @@ public class FreeUserService {
         entity.setFreeLibrary(freeUser.getFreeLibrary());
         entity.setName(freeUser.getName());
         entity.setPassword(freeUser.getPassword());
+        entity.setPhoto(freeUser.getPhoto());
+        entity.setDate(freeUser.getDate());
+        entity.setPhone(freeUser.getPhone());
     }
 }
