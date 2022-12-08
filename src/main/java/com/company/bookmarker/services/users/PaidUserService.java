@@ -43,5 +43,11 @@ public class PaidUserService {
         entity.setFreeLibrary(paidUser.getFreeLibrary());
         entity.setName(paidUser.getName());
         entity.setPassword(paidUser.getPassword());
+        entity.setPhoto(paidUser.getPhoto());
+        entity.setDate(paidUser.getDate());
+        entity.setPhone(paidUser.getPhone());
+        entity.setPaymentType(paidUser.getPaymentType());
+        entity.setPaymentTypeNumber(paidUser.getPaymentTypeNumber());
+        entity.setPaymentValue(paidUser.getPaymentValue());
     }
 }
