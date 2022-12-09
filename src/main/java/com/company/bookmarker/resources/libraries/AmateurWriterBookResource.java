@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.annotation.Resource;
+import java.net.URI;
 
 @RestController
 @RequestMapping(value = "/amateurWriterBook")
@@ -16,7 +17,7 @@ import javax.annotation.Resource;
 public class AmauteurWriterBookService {
 
     @Autowired
-    private AmateurWriterService amauterWriterService;
+    private AmateurWriterService amateurWriterService;
 
     @GetMapping
     public ResponseEntity<java.util.List<AmateurWriterBook>> findAll() {
@@ -25,20 +26,20 @@ public class AmauteurWriterBookService {
 
     @GetMapping(value = "{id}")
     public ResponseEntity<AmateurWriterBook> findById(@PathVariable Long id) {
-        return ResponseEntity.ok(amauterWriterService.findById(id));
+        return ResponseEntity.ok(amateurWriterService.findById(id));
     }
 
     @PostMapping
     public ResponseEntity<AmateurWriterBook> save(@ResponseBody AmateurWriterBook amateurWriterBook) {
-        amateurWriterBook = amauterWriterService.save(amateurWriterBook);
-        amauterWriterService.save(amateurWriterBook);
+        amateurWriterBook = amateurWriterService.save(amateurWriterBook);
+        amateurWriterService.save(amateurWriterBook);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(amateurWriterBook.getId()).toUri();
-        return ResponseEntity.created(uri).body(amauterWriterService);
+        return ResponseEntity.created(uri).body(amateurWriterService);
     }
 
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
-        amauterWriterService.delete(id);
+        amateurWriterService.delete(id);
         return ResponseEntity.noContent().build();
     }
 }
