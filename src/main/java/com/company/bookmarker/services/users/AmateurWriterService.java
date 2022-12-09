@@ -13,26 +13,14 @@ public class AmateurWriterService {
     private AmateurWriterRepository amateurWriterRepository;
 
     public List<AmateurWriter> findAll() {
-<<<<<<< HEAD
-
-=======
->>>>>>> be6275fbb6d7d051d5a0f48cd34c8736e95d3b40
         return amateurWriterRepository.findAll();
     }
 
     public AmateurWriter findById(Long id) {
-<<<<<<< HEAD
-
-=======
->>>>>>> be6275fbb6d7d051d5a0f48cd34c8736e95d3b40
         return amateurWriterRepository.findById(id).get();
     }
 
     public AmateurWriter save(AmateurWriter amateurWriter) {
-<<<<<<< HEAD
-
-=======
->>>>>>> be6275fbb6d7d051d5a0f48cd34c8736e95d3b40
         return amateurWriterRepository.save(amateurWriter);
     }
 
