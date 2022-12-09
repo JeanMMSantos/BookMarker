@@ -14,35 +14,38 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.company.bookmarker.entities.users.AmateurWriter;
-import com.company.bookmarker.services.users.AmauterWriterService;
+import com.company.bookmarker.services.users.AmateurWriterService;
+
+import java.net.URI;
 
 @RestController
-@RequestMapping(value = "/amauterWriter")
+@RequestMapping(value = "/amateurWriter")
 @Resource
-public class AmauterWriterResource {
+public class AmateurWriterResource {
     @Autowired
-    private AmauterWriterService amauterWriterService;
+    private AmateurWriterService amateurWriterService;
 
     @GetMapping
     public ResponseEntity<java.util.List<AmateurWriter>> findAll(){
-        return ResponseEntity.ok(amauterWriterService.findAll());
+        return ResponseEntity.ok(amateurWriterService.findAll());
     }
 
     @GetMapping(value = "{id}")
     public ResponseEntity<AmateurWriter> findById(@PathVariable Long id){
-        return ResponseEntity.ok(amauterWriterService.findById(id));
+        return ResponseEntity.ok(amateurWriterService.findById(id));
     }
 
     @PostMapping
-    public ResponseEntity<AmateurWriter> save(@RequestBody AmateurWriter amauterWriter){
-        amauterWriter = amauterWriterService.save(amauterWriter);
-        amauterWriterService.save(amauterWriter);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(amauterWriter.getId()).toUri();
+    public ResponseEntity<AmateurWriter> save(@RequestBody AmateurWriter amateurWriter){
+        amateurWriter = amateurWriterService.save(amateurWriter);
+        amateurWriterService.save(amateurWriter);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(amateurWriter.getId()).toUri();
+        return ResponseEntity.created(uri).body(amateurWriter);
     }
 
     @DeleteMapping(value = "/{id}")
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
-		amauterWriterService.delete(id);
+		amateurWriterService.delete(id);
 		return ResponseEntity.noContent().build();
 	}
 }

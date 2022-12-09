@@ -12,5 +12,8 @@ public class PremiumLibrary extends Library{
 
     private String name;
     private String theme;
-    private Book favorite;
+
+
+    public PremiumLibrary() {
+    }
 }
