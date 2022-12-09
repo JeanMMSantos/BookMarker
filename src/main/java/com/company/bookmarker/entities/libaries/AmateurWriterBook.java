@@ -1,4 +1,4 @@
-package com.company.bookmarker.entities.libraries;
+package com.company.bookmarker.entities.libaries;
 
 import com.company.bookmarker.entities.users.AmateurWriter;
 
@@ -16,7 +16,26 @@ public class AmateurWriterBook extends Book {
 
     
     private double bookValue;
+    private long id;
     
     public AmateurWriterBook() {
+    }
+
+    public double getBookValue() {
+        return bookValue;
+    }
+
+    public void setBookValue(double bookValue) {
+        this.bookValue = bookValue;
+    }
+
+
+    public long getId() {
+        return id;
+    }
+
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

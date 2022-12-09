@@ -1,25 +1,18 @@
 package com.company.bookmarker.entities.users;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Set;
 
-import com.company.bookmarker.entities.libraries.FreeLibrary;
-import com.company.bookmarker.entities.libraries.PremiumLibrary;
+import com.company.bookmarker.entities.libaries.FreeLibrary;
+import com.company.bookmarker.entities.libaries.PremiumLibrary;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import org.apache.tomcat.jni.Library;
-
 @Entity
-public class PaidUser extends User{    
+public class PaidUser extends user {
 
     @OneToMany
     @JoinColumn(name = "paidUser_id")

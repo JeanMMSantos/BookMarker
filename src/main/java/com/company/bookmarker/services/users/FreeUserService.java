@@ -16,6 +16,7 @@ public class FreeUserService {
     private FreeUserRepository freeUserRepository;
 
     public List<FreeUser> findAll(){
+
         return freeUserRepository.findAll();
     }
 

@@ -1,19 +1,16 @@
 
 package com.company.bookmarker.entities.users;
 
-import com.company.bookmarker.entities.libraries.AmateurWriterBook;
+import com.company.bookmarker.entities.libaries.AmateurWriterBook;
 import java.util.ArrayList;
 import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 
-import org.hibernate.annotations.GeneratorType;
-
-
 
 @Entity
-public class AmateurWriter extends User {
+public class AmateurWriter extends user {
 
     @ManyToMany
     private Set<AmateurWriterBook> amateurWriterBooks;

@@ -1,8 +1,6 @@
 package com.company.bookmarker.entities.users;
 
-import java.time.LocalDate;
-
-import com.company.bookmarker.entities.libraries.FreeLibrary;
+import com.company.bookmarker.entities.libaries.FreeLibrary;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
@@ -11,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tbfreeUser")
 
-public class FreeUser extends User{
+public class FreeUser extends user {
 
     @OneToOne
     private FreeLibrary freeLibrary;

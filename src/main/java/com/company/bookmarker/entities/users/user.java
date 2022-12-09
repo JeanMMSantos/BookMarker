@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public abstract class User {
+public abstract class user {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,7 +17,7 @@ public abstract class User {
     private Long cpf, phone;
     
     //Constructors
-    public User() {
+    public user() {
     }
 
     public long getId() {

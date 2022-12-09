@@ -1,10 +1,6 @@
-package com.company.bookmarker.entities.libraries;
+package com.company.bookmarker.entities.libaries;
 
 import javax.persistence.*;
-
-import com.company.bookmarker.entities.users.PaidUser;
-
-import java.util.ArrayList;
 
 @Entity
 @DiscriminatorValue(value="PremiumLibrary")

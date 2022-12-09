@@ -1,9 +1,7 @@
 package com.company.bookmarker.services.libaries;
 
-import com.company.bookmarker.entities.libraries.AmateurWriterBook;
-import com.company.bookmarker.entities.users.AmateurWriter;
-import com.company.bookmarker.repositories.libaries.AmauteurWriterBookRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.company.bookmarker.entities.libaries.AmateurWriterBook;
+import com.company.bookmarker.repositories.libaries.AmateurWriterBookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,30 +9,33 @@ import java.util.List;
 @Service
 public class AmateurWriterBookService {
 
-    @Autowired
-    private AmauteurWriterBookRepository amauteurWriterBookRepository;
+        private AmateurWriterBookRepository amateurWriterBookRepository;
 
-    public List<AmateurWriterBook> findAll() {
-        return amauteurWriterBookRepository.findAll();
-    }
+        public List<AmateurWriterBook> findAll() {
+                return amateurWriterBookRepository.findAll();
+        }
 
-    public AmateurWriterBook findById(Long id) {
-        return amauteurWriterBookRepository.findById(id).get();
-    }
+        public AmateurWriterBook findById(Long id) {
+                return amateurWriterBookRepository.findById(id).get();
+        }
 
-    public AmateurWriterBook save(AmateurWriterBook amateurWriterBook) {
-        return amateurWriterBook.save(amateurWriterBook);
-    }
+        public AmateurWriterBook save(AmateurWriterBook amateurWriterBook) {
+                return amateurWriterBookRepository.save(amateurWriterBook);
+        }
 
-    public void delete(Long id) {
-        amauteurWriterBookRepository.deleteById(id);
-    }
+        public void delete(Long id) {
+                amateurWriterBookRepository.deleteById(id);
+        }
 
-    public AmateurWriterBook update(Long id, AmateurWriterBook amateurWriterBook) {
-        @SuppressWarnings("depreciation")
-                AmateurWriterBook entity = amauteurWriterBookRepository.getById(id);
-        updateData(enity, amateurWriterBook);
-        return amauteurWriterBookRepository.save(entity);
-    }
+        public AmateurWriterBook update(Long id, AmateurWriterBook amateurWriterBook) {
+                @SuppressWarnings("depreciation")
+                AmateurWriterBook entity = amateurWriterBookRepository.getReferenceById(id);
+                updateData(entity, amateurWriterBook);
+                return amateurWriterBookRepository.save(entity);
+        }
+
+        private void updateData(AmateurWriterBook entity, AmateurWriterBook amateurWriterBook) {
+                entity.setBookValue(amateurWriterBook.getBookValue());
+        }
 
 }

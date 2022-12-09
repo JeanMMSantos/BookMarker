@@ -1,4 +1,4 @@
-package com.company.bookmarker.entities.libraries;
+package com.company.bookmarker.entities.libaries;
 
 import javax.persistence.*;
 import java.util.Set;
