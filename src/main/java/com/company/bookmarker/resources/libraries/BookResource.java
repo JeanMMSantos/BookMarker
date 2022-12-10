@@ -1,8 +1,8 @@
-package com.company.bookmarker.resources.libaries;
+package com.company.bookmarker.resources.libraries;
 
-import com.company.bookmarker.entities.libaries.AmateurWriterBook;
-import com.company.bookmarker.entities.libaries.Book;
-import com.company.bookmarker.services.libaries.BookService;
+import com.company.bookmarker.entities.libraries.AmateurWriterBook;
+import com.company.bookmarker.entities.libraries.Book;
+import com.company.bookmarker.services.libraries.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,8 +1,8 @@
 package com.company.bookmarker.services.libaries;
 
-import com.company.bookmarker.entities.libaries.AmateurWriterBook;
-import com.company.bookmarker.entities.libaries.BookApi;
-import com.company.bookmarker.repositories.libaries.BookApiRepository;
+import com.company.bookmarker.entities.libraries.AmateurWriterBook;
+import com.company.bookmarker.entities.libraries.BookApi;
+import com.company.bookmarker.repositories.libraries.BookApiRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

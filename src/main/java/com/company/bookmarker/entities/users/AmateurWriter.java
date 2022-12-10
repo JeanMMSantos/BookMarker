@@ -1,12 +1,13 @@
 
 package com.company.bookmarker.entities.users;
 
-import com.company.bookmarker.entities.libaries.AmateurWriterBook;
 import java.util.ArrayList;
 import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+
+import com.company.bookmarker.entities.libraries.AmateurWriterBook;
 
 
 @Entity

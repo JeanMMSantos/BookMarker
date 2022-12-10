@@ -1,4 +1,4 @@
-package com.company.bookmarker.entities.libaries;
+package com.company.bookmarker.entities.libraries;
 
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;

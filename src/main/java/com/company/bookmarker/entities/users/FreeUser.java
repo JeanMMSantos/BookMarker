@@ -1,10 +1,10 @@
 package com.company.bookmarker.entities.users;
 
-import com.company.bookmarker.entities.libaries.FreeLibrary;
-
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.company.bookmarker.entities.libraries.FreeLibrary;
 
 @Entity
 @Table(name = "tbfreeUser")

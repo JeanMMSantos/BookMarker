@@ -2,14 +2,14 @@ package com.company.bookmarker.entities.users;
 
 import java.util.Set;
 
-import com.company.bookmarker.entities.libaries.FreeLibrary;
-import com.company.bookmarker.entities.libaries.PremiumLibrary;
-
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
+import com.company.bookmarker.entities.libraries.FreeLibrary;
+import com.company.bookmarker.entities.libraries.PremiumLibrary;
 
 @Entity
 public class PaidUser extends user {

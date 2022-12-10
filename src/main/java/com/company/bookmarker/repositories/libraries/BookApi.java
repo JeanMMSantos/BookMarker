@@ -1,4 +1,4 @@
-package com.company.bookmarker.repositories.libaries;
+package com.company.bookmarker.repositories.libraries;
 
 public interface BookApi {
 }

@@ -1,4 +1,4 @@
-package com.company.bookmarker.resources.libaries;
+package com.company.bookmarker.resources.libraries;
 
 import com.company.bookmarker.entities.libraries.AmateurWriterBook;
 import com.company.bookmarker.services.users.AmateurWriterService;
@@ -20,12 +20,12 @@ public class AmateurWriterBookResource {
     private AmateurWriterService amauterWriterService;
 
     @GetMapping
-    public ResponseEntity<List<com.company.bookmarker.entities.libaries.AmateurWriterBook>> findAll() {
+    public ResponseEntity<List<com.company.bookmarker.entities.libraries.AmateurWriterBook>> findAll() {
         return ResponseEntity.ok(amateurWriterBookService.findAll());
     }
 
     @GetMapping
-    public ResponseEntity<com.company.bookmarker.entities.libaries.AmateurWriterBook> findById(@PathVariable Long id) {
+    public ResponseEntity<com.company.bookmarker.entities.libraries.AmateurWriterBook> findById(@PathVariable Long id) {
         return ResponseEntity.ok(amateurWriterBookService.findById(id));
     }
 
