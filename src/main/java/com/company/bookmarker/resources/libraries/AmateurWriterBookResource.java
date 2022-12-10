@@ -1,6 +1,7 @@
 package com.company.bookmarker.resources.libraries;
 
 import com.company.bookmarker.entities.libraries.AmateurWriterBook;
+import com.company.bookmarker.services.libraries.AmateurWriterBookService;
 import com.company.bookmarker.services.users.AmateurWriterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ import java.util.List;
 public class AmateurWriterBookResource {
 
     @Autowired
-    private AmateurWriterService amauterWriterService;
+    private AmateurWriterBookService amateurWriterBookService;
 
     @GetMapping
     public ResponseEntity<List<com.company.bookmarker.entities.libraries.AmateurWriterBook>> findAll() {
