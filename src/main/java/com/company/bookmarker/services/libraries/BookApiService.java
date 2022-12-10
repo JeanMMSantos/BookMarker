@@ -26,7 +26,7 @@ public class BookApiService {
     }
 
     public void delete(Long id) {
-        bookApiRepository.delete(id);
+        bookApiRepository.deleteById(id);
     }
 
     public BookApi update(Long id, BookApi bookApi) {
