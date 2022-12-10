@@ -1,4 +1,4 @@
-package com.company.bookmarker.services.libaries;
+package com.company.bookmarker.services.libraries;
 
 import com.company.bookmarker.entities.libraries.AmateurWriterBook;
 import com.company.bookmarker.entities.libraries.BookApi;
