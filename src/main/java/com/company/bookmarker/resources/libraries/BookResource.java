@@ -36,11 +36,11 @@ public class BookResource {
         bookService.save(book);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(book.getId()).toUri();
         return ResponseEntity.created(uri).body(book);
+    }
 
-        @DeleteMapping(value = "/{id}")
-        public ResponseEntity<Void> delete(@PathVariable Long id) {
-            bookService.delete(id);
-            return ResponseEntity.noContent().build();
-        }
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        bookService.delete(id);
+        return ResponseEntity.noContent().build();
     }
 }
