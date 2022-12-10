@@ -1,5 +1,6 @@
 package com.company.bookmarker.resources.libaries;
 
+import com.company.bookmarker.entities.libaries.AmateurWriterBook;
 import com.company.bookmarker.entities.libaries.Book;
 import com.company.bookmarker.services.libaries.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.annotation.Resource;
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/book")
@@ -19,7 +21,7 @@ public class BookResource {
     private BookService bookService;
 
     @GetMapping
-    public ResponseEntity<java.util.List<Book>> findAll() {
+    public ResponseEntity<List<AmateurWriterBook>> findAll() {
         return ResponseEntity.ok(bookService.findAll());
     }
 

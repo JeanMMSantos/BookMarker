@@ -1,10 +1,8 @@
-package com.company.bookmarker.services.libraries;
+package com.company.bookmarker.services.libaries;
 
-import com.company.bookmarker.entities.libraries.AmateurWriterBook;
-import com.company.bookmarker.entities.users.AmateurWriter;
-import com.company.bookmarker.repositories.libraries.AmauteurWriterBookRepository;
+import com.company.bookmarker.entities.libaries.AmateurWriterBook;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.company.bookmarker.repositories.libaries.AmateurWriterBookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

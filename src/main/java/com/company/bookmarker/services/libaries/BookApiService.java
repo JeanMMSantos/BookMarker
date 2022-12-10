@@ -1,7 +1,6 @@
 package com.company.bookmarker.services.libaries;
 
 import com.company.bookmarker.entities.libaries.AmateurWriterBook;
-import com.company.bookmarker.entities.libaries.Book;
 import com.company.bookmarker.entities.libaries.BookApi;
 import com.company.bookmarker.repositories.libaries.BookApiRepository;
 import org.springframework.stereotype.Service;
@@ -18,7 +17,7 @@ public class BookApiService {
         return bookApiRepository.findAll();
     }
 
-    public BookApi findById(Long id) {
+    public AmateurWriterBook findById(Long id) {
         return bookApiRepository.findById(id).get();
     }
 
