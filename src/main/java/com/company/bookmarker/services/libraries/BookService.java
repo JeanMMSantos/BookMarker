@@ -1,6 +1,5 @@
 package com.company.bookmarker.services.libraries;
 
-import com.company.bookmarker.entities.libraries.AmateurWriterBook;
 import com.company.bookmarker.entities.libraries.Book;
 import com.company.bookmarker.repositories.libraries.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ public class BookService {
     @Autowired
     private BookRepository bookRepository;
 
-    public List<AmateurWriterBook> findAll() {
+    public List<Book> findAll() {
         return bookRepository.findAll();
     }
 
