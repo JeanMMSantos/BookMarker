@@ -49,6 +49,7 @@ public class AmateurWriterResource {
 		amateurWriterService.delete(id);
 		return ResponseEntity.noContent().build();
 	}
+    
     @PutMapping(value = "/{id}")
     public ResponseEntity<AmateurWriter> updated(@PathVariable Long id, @RequestBody AmateurWriter amateurWriter) {
         amateurWriter = amateurWriterService.update(id, amateurWriter);
