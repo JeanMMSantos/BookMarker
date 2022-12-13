@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="classe")
 public class BookStatus {
-    @OneToOne
+    @ManyToOne
     private Book book;
     private int currentPage;
     private String status;

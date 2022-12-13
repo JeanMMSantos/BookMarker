@@ -11,9 +11,8 @@ import javax.persistence.*;
 @DiscriminatorValue(value="AmateurWriterBook")
 public class AmateurWriterBook extends Book {
 
-    @ManyToMany(mappedBy = "amateurWriterBooks")
-    private Set<AmateurWriter> amateurWriters;
 
+    private Set<AmateurWriter> amateurWriters;
     
     private double bookValue;
     private long id;
