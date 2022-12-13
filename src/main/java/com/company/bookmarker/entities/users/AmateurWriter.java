@@ -16,8 +16,8 @@ import com.company.bookmarker.entities.libraries.PremiumLibrary;
 @Entity
 public class AmateurWriter extends user {
 
-    @OneToMany
-    @JoinColumn(name = "amauterwriter_id")
+    @OneToMany(mappedBy = "id")
+    //@JoinColumn(name = "amauterwriter_id")
     private Set<AmateurWriterBook> amateurWriterBooks;
 
     private String pseudonym;

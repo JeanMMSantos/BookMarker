@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class AmateurWriterBook extends Book {
 
 
-    //ManyToOne(mappedBy="")
+    //@ManyToOne(mappedBy="id")
     private Set<AmateurWriter> amateurWriters;
 
     
@@ -28,4 +28,5 @@ public class AmateurWriterBook extends Book {
     public void setBookValue(double bookValue) {
         this.bookValue = bookValue;
     }
+    
 }
