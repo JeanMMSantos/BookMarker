@@ -1,4 +1,4 @@
-package com.company.bookmarker.services;
+package com.company.bookmarker.services.libraries;
 
 import com.company.bookmarker.entities.libraries.PremiumLibrary;
 import com.company.bookmarker.repositories.libraries.PremiumLibraryRepository;
