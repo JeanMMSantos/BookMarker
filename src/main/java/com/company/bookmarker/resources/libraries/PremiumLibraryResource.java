@@ -3,7 +3,7 @@ package com.company.bookmarker.resources.libraries;
 
 import com.company.bookmarker.dtos.PremiumLibraryDto;
 import com.company.bookmarker.entities.libraries.PremiumLibrary;
-import com.company.bookmarker.services.PremiumLibraryService;
+import com.company.bookmarker.services.libraries.PremiumLibraryService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
