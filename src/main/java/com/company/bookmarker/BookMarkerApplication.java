@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import javax.persistence.Entity;
 
 @SpringBootApplication(exclude={SecurityAutoConfiguration.class})
-@Entity
 public class BookMarkerApplication {
 
 	public static void main(String[] args) {
