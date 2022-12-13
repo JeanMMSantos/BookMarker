@@ -13,7 +13,11 @@ public abstract class user {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String name, password, email, gender, photo;
+    private String name;
+    private String password;
+    private String email;
+    private String gender;
+    private String photo;
     private LocalDate date;
     private Long cpf, phone;
     
