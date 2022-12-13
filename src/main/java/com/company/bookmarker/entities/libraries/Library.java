@@ -12,6 +12,7 @@ public abstract class Library {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
 
-    @ManyToMany
+    @OneToMany
+    @JoinColumn
     private Set<BookStatus> defaultFreeLibrary;
 }

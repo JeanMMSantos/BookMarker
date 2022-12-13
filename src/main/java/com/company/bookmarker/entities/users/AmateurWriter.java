@@ -13,13 +13,14 @@ import com.company.bookmarker.entities.libraries.AmateurWriterBook;
 @Entity
 public class AmateurWriter extends user {
 
-    @ManyToMany
+
     private Set<AmateurWriterBook> amateurWriterBooks;
 
     private String pseudonym;
     private String Description;
     private AmateurWriterBook mostPopBook;
-    private AmateurWriterBook amateurWriterBook; 
+    private AmateurWriterBook amateurWriterBook;
+
     private ArrayList<AmateurWriterBook> writedBooks = new ArrayList<AmateurWriterBook>();
     
 

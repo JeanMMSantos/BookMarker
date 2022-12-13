@@ -21,7 +21,7 @@ public class PaidUser extends user {
     @OneToOne
     private FreeLibrary freeLibrary;
 
-    @ManyToOne
+
     private PaymentType paymentType;
     
     private int paymentTypeNumber;
