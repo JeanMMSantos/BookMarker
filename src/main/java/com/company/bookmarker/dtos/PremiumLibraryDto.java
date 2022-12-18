@@ -1,17 +1,10 @@
-package com.company.bookmarker.entities.libraries;
+package com.company.bookmarker.dtos;
 
-import javax.persistence.*;
 
-@Entity
-@DiscriminatorValue(value="PremiumLibrary")
-public class PremiumLibrary extends Library{
+public class PremiumLibraryDto {
 
     private String name;
     private String theme;
-
-
-    public PremiumLibrary() {
-    }
 
     public String getName() {
         return name;
@@ -28,5 +21,4 @@ public class PremiumLibrary extends Library{
     public void setTheme(String theme) {
         this.theme = theme;
     }
-
 }

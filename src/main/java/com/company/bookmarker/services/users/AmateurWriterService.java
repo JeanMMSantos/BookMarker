@@ -48,7 +48,7 @@ public class AmateurWriterService {
 
         entity.setPseudonym(amateurWriter.getPseudonym());
         entity.setDescription(amateurWriter.getDescription());
-        entity.setMostPopBook(amateurWriter.getMostPopBook());
+        //entity.setMostPopBook(amateurWriter.getMostPopBook());
     }
 }
 
